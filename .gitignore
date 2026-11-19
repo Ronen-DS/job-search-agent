@@ -1,0 +1,13 @@
+# Temporary files: one-off scripts and rendered pages
+scratch/
+renders/
+# Personal data: kept on this computer only (see profile.example.md)
+profile.md
+feedback.md
+jobs/
+digests/
+jobs_seen.csv
+state/
+check_manually.csv
+# Python's compiled-file cache
+__pycache__/

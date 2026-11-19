@@ -1,0 +1,33 @@
+{
+  "_help": "Optional per-company settings for fetch_jobs.py, keyed by the exact name in companies.csv. extra_pages: more pages to render besides careers_url. text_list: jobs are the plain lines between the 'start' line and the 'end' line (for pages whose jobs are not links). job_filter: keep only jobs whose card text contains one of these words (for portals shared by several companies). manual: skip the company and give this reason (it is listed in check_manually.csv).",
+
+  "Technion": {
+    "manual": "job titles are in collapsed sections that render hidden"
+  },
+
+  "Zimin Institute (Technion)": {
+    "manual": "uses the Technion jobs page, whose titles render hidden"
+  },
+
+  "Taliaz Health": {
+    "extra_pages": [
+      "https://taliazhealth.co.il/%D7%9E%D7%A9%D7%A8%D7%95%D7%AA-%D7%A7%D7%9C%D7%99%D7%A0%D7%99/",
+      "https://taliazhealth.co.il/%D7%90%D7%99%D7%9F-%D7%9E%D7%A9%D7%A8%D7%94/"
+    ],
+    "text_list": {"start": "משרות פתוחות", "end": "אודות"}
+  },
+
+  "Illumina Israel (Emedgene)": {
+    "extra_pages": [
+      "https://illumina.wd1.myworkdayjobs.com/illumina-careers?q=Israel"
+    ]
+  },
+
+  "Rabin Medical Center (Beilinson)": {
+    "job_filter": ["רבין", "בילינסון"]
+  },
+
+  "Soroka Medical Center": {
+    "job_filter": ["סורוקה"]
+  }
+}

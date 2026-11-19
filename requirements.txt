@@ -1,0 +1,6 @@
+# Python packages for the job-search agent. Install with:
+#   python -m pip install -r requirements.txt
+# Playwright also needs its browser once: python -m playwright install chromium
+requests>=2.31        # hiring-system feeds (fetch-jobs, read posting)
+playwright>=1.40      # rendering careers pages (scripts/render_page.py)
+python-docx>=1.1      # Word copy of the weekly digest (digests/<date>.docx)
